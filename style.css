@@ -13,6 +13,18 @@ a {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
 button {
     border: none;
 }
@@ -25,19 +37,22 @@ button {
     background: #1F2937;
 }
 
+p,
 .header,
 .header-first,
 .menu,
 .menu ul,
 .hero,
 .hero-text,
-.hero-image {
+.hero-image,
+.benefits-cards {
     display: flex;
 }
 
 /*** CONTAINER ***/
 
 .container {
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -88,13 +103,12 @@ button {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
-    margin: 0;
-    padding: 0;
 }
 
 .hero-description {
     font-size: 18px;
     color: #E5E7EB;
+    padding: 25px 0;
 }
 
 .hero-cta {
@@ -117,4 +131,118 @@ button {
 .hero-image {
     flex: 1;
     justify-content: flex-end;
+}
+
+/*** INFORMATIONS ***/
+
+.main-container {
+    flex-direction: column;
+}
+
+.informations {
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.information-title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.card {
+    flex: 0 0 200px;
+}
+
+.card img {
+    border: 1px solid blue;
+    border-radius: 25px;
+    min-height: 75px;
+}
+
+.benefits-cards {
+    justify-content: center;
+    gap: 50px;
+}
+
+.benefit-title {
+    padding: 15px 0;
+}
+.benefit-description {
+    font-size: 14px;
+}
+
+/*** QUOTE ***/
+
+.container-quote {
+    background: #E5E7EB;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    flex: 1 1 300px;
+    margin-bottom: 15px;
+}
+
+.quote-source {
+    font-weight: bold;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+/*** CTA BANNER ***/
+
+.banner {
+    padding: 50px 0;
+}
+
+.cta-banner {
+    background-color: #3882F6;
+    color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.cta-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cta-banner-title {
+    margin-bottom: 10px;
+}
+
+.cta-banner-description {
+    font-weight: 100;
+}
+
+.cta-banner-button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+/*** FOOTER ***/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #1F2937;
+    color: white;
+    font-size: 12px;
 }
